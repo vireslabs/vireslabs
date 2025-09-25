@@ -1,26 +1,42 @@
 <template>
   <div
-    class="flex h-screen w-screen flex-col items-center justify-end gap-20 py-5 bg-black text-white overflow-hidden select-none cursor-default"
+    class="flex flex-col items-center justify-end gap-20 h-screen w-screen lg:py-5 bg-black text-white overflow-hidden select-none cursor-default"
   >
     <div>
       <h1
-        class="text-[110px] xs:text-[48px] font-bold leading-none text-center my-52"
+        class="font-anurati text-5xl lg:text-[205px] text-center font-stretch-extra-expanded uppercase"
       >
-        Vires Labs
+        vireslabs
       </h1>
     </div>
 
-    <div class="flex gap-16 text-[24px] text-center xs:text-[16px]">
-      <div class="text-gray-400">We build</div>
-      <a href="https://www.monadcolors.art" target="_blank">MonadColors</a>
+    <div
+      class="fixed inset-0 bg-repeat opacity-[0.04] bg-[url(/background.png)] bg-[length:90px_90px] z-1"
+    ></div>
+
+    <div class="flex gap-16 lg:text-[24px] text-center z-2">
+      <div class="text-neutral-400">We build</div>
+      <a
+        href="https://www.monadcolors.art"
+        target="_blank"
+        class="hover:text-neutral-500 duration-100"
+        >MonadColors</a
+      >
     </div>
 
-    <div class="flex gap-4">
+    <div class="order-2 lg:order-1">
+      <img
+        class="neon-animate lg:absolute bottom-1 right-5"
+        src="/ascii-girl.webp"
+        alt=""
+      />
+    </div>
+
+    <div class="flex gap-4 order-1 lg:order-2 z-2">
       <a href="https://x.com/vireslabs" target="_blank">
         <svg
+          class="size-[16px] lg:size-[24px]"
           xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
           viewBox="0 0 24 24"
           data-v-b1d6e7b8=""
         >
@@ -33,9 +49,8 @@
       </a>
       <a href="https://github.com/vireslabs" target="_blank">
         <svg
+          class="size-[16px] lg:size-[24px]"
           xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
           viewBox="0 0 24 24"
           data-v-b1d6e7b8=""
         >

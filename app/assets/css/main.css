@@ -1,1 +1,45 @@
 @import "tailwindcss";
+
+@theme {
+  @keyframes glow {
+    0%,
+    100% {
+      filter: drop-shadow(0px 0px 3px rgba(177, 148, 245, 0.5))
+        drop-shadow(0px 0px 6px rgba(177, 148, 245, 0.2))
+        drop-shadow(0px 0px 12px rgba(177, 148, 245, 0.5))
+        drop-shadow(0px 0px 24px rgba(177, 148, 245, 0.5))
+        drop-shadow(0px 0px 48px rgba(177, 148, 245, 0.7))
+        drop-shadow(0px 0px 70px rgba(177, 148, 245, 0.4));
+    }
+    50% {
+      filter: drop-shadow(0px 0px 4px rgba(177, 148, 245, 0.6))
+        drop-shadow(0px 0px 8px rgba(177, 148, 245, 0.3))
+        drop-shadow(0px 0px 14px rgba(177, 148, 245, 0.6))
+        drop-shadow(0px 0px 28px rgba(177, 148, 245, 0.6))
+        drop-shadow(0px 0px 56px rgba(177, 148, 245, 0.8))
+        drop-shadow(0px 0px 80px rgba(177, 148, 245, 0.5));
+    }
+  }
+  --font-anurati: "Anurati", sans-serif;
+}
+
+html,
+body {
+  background-color: #000;
+  overflow: hidden;
+}
+
+.neon-animate {
+  color: transparent;
+  animation: glow 3s infinite ease-in-out;
+}
+
+.neon {
+  color: transparent;
+  filter: drop-shadow(0px 0px 3px rgba(177, 148, 245, 0.5))
+    drop-shadow(0px 0px 6px rgba(177, 148, 245, 0.2))
+    drop-shadow(0px 0px 12px rgba(177, 148, 245, 0.5))
+    drop-shadow(0px 0px 24px rgba(177, 148, 245, 0.5))
+    drop-shadow(0px 0px 48px rgba(177, 148, 245, 0.8))
+    drop-shadow(0px 0px 70px rgba(177, 148, 245, 0.5));
+}
