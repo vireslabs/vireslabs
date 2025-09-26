@@ -1,50 +1,64 @@
 <template>
   <div
-    class="flex h-screen w-screen flex-col items-center justify-end gap-20 py-5 bg-black text-white overflow-hidden select-none cursor-default"
+    class="flex flex-col items-center justify-end lg:justify-center gap-14 lg:gap-20 h-screen w-screen lg:py-5 bg-black text-white overflow-hidden select-none cursor-default"
   >
     <div>
       <h1
-        class="text-[110px] xs:text-[48px] font-bold leading-none text-center my-52"
+        class="font-anurati text-6xl lg:text-[205px] text-center font-stretch-extra-expanded uppercase"
       >
-        Vires Labs
+        vireslabs
       </h1>
     </div>
 
-    <div class="flex gap-16 text-[24px] text-center xs:text-[16px]">
-      <div class="text-gray-400">We build</div>
-      <a href="https://www.monadcolors.art" target="_blank">MonadColors</a>
+    <div
+      class="fixed inset-0 bg-repeat opacity-[0.04] bg-[url(/background.png)] bg-[length:90px_90px] z-1"
+    ></div>
+
+    <div class="flex gap-16 text-[24px] text-center z-2">
+      <div class="text-neutral-400">We build</div>
+      <a
+        href="https://www.monadcolors.art"
+        target="_blank"
+        class="hover:text-neutral-500 duration-100"
+        >MonadColors</a
+      >
     </div>
 
-    <div class="flex gap-4">
+    <div class="order-2 lg:order-1">
+      <img
+        class="neon-animate w-[300px] lg:w-auto lg:absolute bottom-1 right-5"
+        src="/ascii-girl.webp"
+        alt=""
+      />
+    </div>
+
+    <div class="flex gap-4 order-1 lg:order-2 z-2">
       <a href="https://x.com/vireslabs" target="_blank">
         <svg
-          class="size-[20px]"
-          viewBox="0 0 1200 1227"
-          fill="none"
+          class="size-[24px]"
           xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          data-v-b1d6e7b8=""
         >
           <path
-            fill="white"
-            d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z"
-          />
+            fill="currentColor"
+            d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"
+            data-v-b1d6e7b8=""
+          ></path>
         </svg>
       </a>
       <a href="https://github.com/vireslabs" target="_blank">
         <svg
-          class="size-[20px]"
-          viewBox="0 0 97.6 96"
-          fill="none"
+          class="size-[24px]"
           xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          data-v-b1d6e7b8=""
         >
           <path
-            fill="white"
-            d="M48.9,0C21.8,0,0,22,0,49.2C0,71,14,89.4,33.4,95.9c2.4,0.5,3.3-1.1,3.3-2.4c0-1.1-0.1-5.1-0.1-9.1
-	c-13.6,2.9-16.4-5.9-16.4-5.9c-2.2-5.7-5.4-7.2-5.4-7.2c-4.4-3,0.3-3,0.3-3c4.9,0.3,7.5,5.1,7.5,5.1c4.4,7.5,11.4,5.4,14.2,4.1
-	c0.4-3.2,1.7-5.4,3.1-6.6c-10.8-1.1-22.2-5.4-22.2-24.3c0-5.4,1.9-9.8,5-13.2c-0.5-1.2-2.2-6.3,0.5-13c0,0,4.1-1.3,13.4,5.1
-	c3.9-1.1,8.1-1.6,12.2-1.6s8.3,0.6,12.2,1.6c9.3-6.4,13.4-5.1,13.4-5.1c2.7,6.8,1,11.8,0.5,13c3.2,3.4,5,7.8,5,13.2
-	c0,18.9-11.4,23.1-22.3,24.3c1.8,1.5,3.3,4.5,3.3,9.1c0,6.6-0.1,11.9-0.1,13.5c0,1.3,0.9,2.9,3.3,2.4C83.6,89.4,97.6,71,97.6,49.2
-	C97.7,22,75.8,0,48.9,0z"
-          />
+            fill="currentColor"
+            d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+            data-v-b1d6e7b8=""
+          ></path>
         </svg>
       </a>
     </div>
