@@ -9,7 +9,7 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      title: "vireslabs",
+      title: "Vires Labs - Shipping dapps nobody asked for, but everyone will use 🚀" ,
       htmlAttrs: {
         lang: "en",
       },

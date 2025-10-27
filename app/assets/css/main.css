@@ -25,8 +25,8 @@
 
 html,
 body {
-  background-color: #000;
-  overflow: hidden;
+  background-color: #000; /* #1a191c */
+  /*overflow: hidden;*/
 }
 
 .neon-animate {
@@ -42,4 +42,60 @@ body {
     drop-shadow(0px 0px 24px rgba(177, 148, 245, 0.5))
     drop-shadow(0px 0px 48px rgba(177, 148, 245, 0.8))
     drop-shadow(0px 0px 70px rgba(177, 148, 245, 0.5));
+}
+
+.neon-white {
+    color: #fff;
+    text-shadow:
+            0 0 2px #fff,
+            0 0 6px #fff,
+            0 0 12px #fff,
+            0 0 24px rgba(255,255,255,0.6),
+            0 0 48px rgba(255,255,255,0.35);
+}
+
+.neon-white:hover {
+    text-shadow:
+            0 0 3px #fff,
+            0 0 8px #fff,
+            0 0 16px #fff,
+            0 0 32px rgba(255,255,255,0.75),
+            0 0 64px rgba(255,255,255,0.45);
+}
+
+.neon-soft {
+    color: #fff;
+    text-shadow:
+            0 0 4px rgba(255,255,255,0.6),
+            0 0 10px rgba(255,255,255,0.4),
+            0 0 20px rgba(255,255,255,0.25),
+            0 0 40px rgba(255,255,255,0.15),
+            0 0 80px rgba(255,255,255,0.08);
+}
+
+.neon-soft:hover {
+    text-shadow:
+            0 0 6px rgba(255,255,255,0.8),
+            0 0 14px rgba(255,255,255,0.6),
+            0 0 28px rgba(255,255,255,0.35),
+            0 0 56px rgba(255,255,255,0.2),
+            0 0 112px rgba(255,255,255,0.12);
+}
+
+.icon-glow {
+    color: #fff;
+    filter: drop-shadow(0 0 4px rgba(255,255,255,0.6))
+    drop-shadow(0 0 10px rgba(255,255,255,0.4))
+    drop-shadow(0 0 20px rgba(255,255,255,0.25))
+    drop-shadow(0 0 40px rgba(255,255,255,0.15))
+    drop-shadow(0 0 80px rgba(255,255,255,0.08));
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.icon-glow:hover {
+    filter: drop-shadow(0 0 6px rgba(255,255,255,0.8))
+    drop-shadow(0 0 14px rgba(255,255,255,0.6))
+    drop-shadow(0 0 28px rgba(255,255,255,0.35))
+    drop-shadow(0 0 56px rgba(255,255,255,0.2))
+    drop-shadow(0 0 112px rgba(255,255,255,0.12));
 }
